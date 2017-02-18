@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+    background: #000;
+}
+.container {
+    margin: 30px;
+}
+.tab_menu li {
+    padding: 10px 16px;
+    background: #ffffff;
+    border-bottom: 2px solid black;
+    float: left;
+    margin-right: 2px;
+    color: #f0141e;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tab_menu li:last-child {
+    margin-right: 0;
+}
+.tab_menu li.active {
+    background: #f0141e;
+    border-bottom: 2px solid #f0141e;
+    color: #ffffff;
+}
+.tab_contents {
+    width: 724px;
+    height: 377px;
+    background: #000;
+    border: 10px solid red;
+    margin-bottom: 20px;
+}
+.tab_contents li {
+    position: absolute;
+    display: none;
+}
+.tab_contents li.active {
+    display: block;
+}
